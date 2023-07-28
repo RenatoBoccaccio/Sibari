@@ -1,0 +1,20 @@
+INSERT INTO archeo."cassette" (
+	"idcassetta",
+	"comune",
+	"localita",
+	"sito",
+	"sigla",
+	"anno",
+	"data",
+	"frontalino_cassetta",
+	"field_9")
+VALUES (
+	'{{insert_form.formData.idcassetta}}',
+	'{{insert_form.formData.comune}}',
+	'{{insert_form.formData.localita}}',
+	'{{insert_form.formData.sito}}',
+	'{{insert_form.formData.sigla}}',
+	'{{insert_form.formData.anno}}',
+	'{{insert_form.formData.data}}',
+	'{{insert_form.formData.frontalino_cassetta}}',
+	'{{insert_form.formData.field_9}}');

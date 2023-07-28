@@ -1,0 +1,10 @@
+UPDATE archeo."siti" SET
+		"sito" = '{{update_form.fieldState.sito.isVisible ? update_form.formData.sito : update_form.sourceData.sito}}',
+		"area_scavo" = '{{update_form.fieldState.area_scavo.isVisible ? update_form.formData.area_scavo : update_form.sourceData.area_scavo}}',
+    "d_cassetta" = '{{update_form.fieldState.d_cassetta.isVisible ? update_form.formData.d_cassetta : update_form.sourceData.d_cassetta}}',
+		"n_riserva" = '{{update_form.fieldState.n_riserva.isVisible ? update_form.formData.n_riserva : update_form.sourceData.n_riserva}}',
+		"n_scaffale" = '{{update_form.fieldState.n_scaffale.isVisible ? update_form.formData.n_scaffale : update_form.sourceData.n_scaffale}}',
+		"n_cassetta" = '{{update_form.fieldState.n_cassetta.isVisible ? update_form.formData.n_cassetta : update_form.sourceData.n_cassetta}}',
+		"anno" = '{{update_form.fieldState.anno.isVisible ? update_form.formData.anno : update_form.sourceData.anno}}',
+		"tot_cassetta" = '{{update_form.fieldState.tot_cassetta.isVisible ? update_form.formData.tot_cassetta : update_form.sourceData.tot_cassetta}}'
+WHERE "id" = {{data_table.selectedRow.id}};

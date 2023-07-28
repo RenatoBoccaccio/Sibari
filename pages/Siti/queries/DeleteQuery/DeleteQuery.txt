@@ -1,0 +1,2 @@
+DELETE FROM archeo."siti"
+  WHERE "id" = {{data_table.triggeredRow.id}};

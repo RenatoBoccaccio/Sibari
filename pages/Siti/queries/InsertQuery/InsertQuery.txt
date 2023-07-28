@@ -1,0 +1,20 @@
+INSERT INTO archeo."siti" (
+	"id",
+	"sito",
+	"area_scavo",
+	"d_cassetta",
+	"n_riserva",
+	"n_scaffale",
+	"n_cassetta",
+	"anno",
+	"tot_cassetta")
+VALUES (
+	'{{insert_form.formData.id}}',
+	'{{insert_form.formData.sito}}',
+	'{{insert_form.formData.area_scavo}}',
+	'{{insert_form.formData.d_cassetta}}',
+	'{{insert_form.formData.n_riserva}}',
+	'{{insert_form.formData.n_scaffale}}',
+	'{{insert_form.formData.n_cassetta}}',
+	'{{insert_form.formData.anno}}',
+	'{{insert_form.formData.tot_cassetta}}');

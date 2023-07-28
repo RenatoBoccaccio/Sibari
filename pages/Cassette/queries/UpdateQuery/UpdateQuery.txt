@@ -1,0 +1,10 @@
+UPDATE archeo."cassette" SET
+		"comune" = '{{update_form.fieldState.comune.isVisible ? update_form.formData.comune : update_form.sourceData.comune}}',
+		"localita" = '{{update_form.fieldState.localita.isVisible ? update_form.formData.localita : update_form.sourceData.localita}}',
+    "sito" = '{{update_form.fieldState.sito.isVisible ? update_form.formData.sito : update_form.sourceData.sito}}',
+		"sigla" = '{{update_form.fieldState.sigla.isVisible ? update_form.formData.sigla : update_form.sourceData.sigla}}',
+		"anno" = '{{update_form.fieldState.anno.isVisible ? update_form.formData.anno : update_form.sourceData.anno}}',
+		"data" = '{{update_form.fieldState.data.isVisible ? update_form.formData.data : update_form.sourceData.data}}',
+		"frontalino_cassetta" = '{{update_form.fieldState.frontalino_cassetta.isVisible ? update_form.formData.frontalino_cassetta : update_form.sourceData.frontalino_cassetta}}',
+		"field_9" = '{{update_form.fieldState.field_9.isVisible ? update_form.formData.field_9 : update_form.sourceData.field_9}}'
+WHERE "idcassetta" = {{data_table.selectedRow.idcassetta}};

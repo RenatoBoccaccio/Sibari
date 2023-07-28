@@ -1,0 +1,74 @@
+{
+  "pages": [
+    {
+      "id": "Cassette",
+      "isDefault": false
+    },
+    {
+      "id": "Siti",
+      "isDefault": false
+    },
+    {
+      "id": "Home",
+      "isDefault": true
+    },
+    {
+      "id": "MainPage",
+      "isDefault": false
+    },
+    {
+      "id": "ReadPage",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "unpublishedApplicationDetail": {
+    "navigationSetting": {
+      "showNavbar": true,
+      "orientation": "top",
+      "navStyle": "stacked",
+      "position": "static",
+      "itemStyle": "text",
+      "colorStyle": "theme",
+      "logoAssetId": "",
+      "logoConfiguration": "applicationTitleOnly",
+      "showSignIn": true
+    }
+  },
+  "publishedApplicationDetail": {
+    "navigationSetting": {
+      "showNavbar": true,
+      "orientation": "top",
+      "navStyle": "stacked",
+      "position": "static",
+      "itemStyle": "text",
+      "colorStyle": "theme",
+      "logoAssetId": "",
+      "logoConfiguration": "applicationTitleOnly",
+      "showSignIn": true
+    }
+  },
+  "color": "#C7F3F0",
+  "icon": "team",
+  "unpublishedCustomJSLibs": [
+    {
+      "uidString": "jsonwebtoken_/libraries/jsonwebtoken@8.5.1.js"
+    },
+    {
+      "uidString": "dcodeIO_https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.min.js"
+    }
+  ],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "embedSetting": {
+    "height": "720px",
+    "width": "1024px",
+    "showNavigationBar": false
+  },
+  "collapseInvisibleWidgets": true,
+  "isManualUpdate": false,
+  "deleted": false
+}

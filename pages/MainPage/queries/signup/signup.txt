@@ -1,0 +1,8 @@
+INSERT INTO archeo.utenti
+  (nome, password, tipo)
+VALUES
+  (
+    '{{this.params.nome}}',
+		'{{this.params.pHash}}',
+		'{{this.params.tipo}}'
+  );
