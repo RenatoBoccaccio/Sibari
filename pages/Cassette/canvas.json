@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 860,
+          "bottomRow": 1040,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -38,8 +38,8 @@
                   "key": "boxShadow"
                 }
               ],
-              "topRow": 0,
-              "bottomRow": 86,
+              "topRow": 6,
+              "bottomRow": 104,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "shouldScrollContents": true,
@@ -64,7 +64,7 @@
                   "widgetId": "59rw5mx0bq",
                   "containerStyle": "none",
                   "topRow": 0,
-                  "bottomRow": 860,
+                  "bottomRow": 980,
                   "parentRowSpace": 1,
                   "isVisible": "true",
                   "canExtend": false,
@@ -192,8 +192,9 @@
                           "key": "primaryColumns.customColumn1.borderRadius"
                         }
                       ],
+                      "compactMode": "SHORT",
                       "displayName": "Table",
-                      "bottomRow": 85,
+                      "bottomRow": 95,
                       "parentRowSpace": 10,
                       "defaultSelectedRow": "0",
                       "hideCard": false,
@@ -1314,9 +1315,9 @@
               "borderColor": "#fff",
               "iconSVG": "/static/media/icon.6bacf7df.svg",
               "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-              "topRow": 0,
+              "topRow": 6,
               "type": "JSON_FORM_WIDGET",
-              "topRowBeforeCollapse": 0,
+              "topRowBeforeCollapse": 6,
               "animateLoading": true,
               "leftColumn": 39,
               "dynamicBindingPathList": [
@@ -1441,7 +1442,7 @@
               "showReset": true,
               "dynamicHeight": "FIXED",
               "autoGenerateForm": true,
-              "bottomRowBeforeCollapse": 86,
+              "bottomRowBeforeCollapse": 100,
               "resetButtonStyles": {
                 "boxShadow": "none",
                 "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -1531,7 +1532,7 @@
               },
               "disabledWhenInvalid": true,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 86,
+              "originalBottomRow": 100,
               "schema": {
                 "__root_schema__": {
                   "labelTextSize": "0.875rem",
@@ -1781,7 +1782,7 @@
                 }
               ],
               "displayName": "JSON Form",
-              "bottomRow": 86,
+              "bottomRow": 104,
               "fieldLimitExceeded": false,
               "parentRowSpace": 10,
               "title": "Modifica riga id: {{data_table.selectedRow.idcassetta}}",
@@ -1804,9 +1805,84 @@
               "renderMode": "CANVAS",
               "scrollContents": true,
               "fixedFooter": true,
-              "originalTopRow": 0,
+              "originalTopRow": 6,
               "maxDynamicHeight": 9000,
               "minDynamicHeight": 4
+            },
+            {
+              "isCompact": false,
+              "boxShadow": "none",
+              "mobileBottomRow": 5,
+              "widgetName": "MenuButton1",
+              "displayName": "Menu Button",
+              "iconSVG": "/static/media/icon.0341d17d67020c8bfc560cc5928af2a7.svg",
+              "topRow": 1,
+              "bottomRow": 5,
+              "parentRowSpace": 10,
+              "type": "MENU_BUTTON_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 64,
+              "animateLoading": true,
+              "parentColumnSpace": 22.4375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "menuItems.menuItem1.onClick"
+                }
+              ],
+              "leftColumn": 48,
+              "dynamicBindingPathList": [
+                {
+                  "key": "menuColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "isDisabled": false,
+              "key": "xfoed0im2m",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "menuVariant": "PRIMARY",
+              "widgetId": "4sqln6jddb",
+              "menuItems": {
+                "menuItem1": {
+                  "label": "Siti",
+                  "id": "menuItem1",
+                  "widgetId": "",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 0,
+                  "onClick": "{{navigateTo('Siti', {}, 'SAME_WINDOW');}}"
+                },
+                "menuItem2": {
+                  "label": "Cantieri",
+                  "id": "menuItem2",
+                  "widgetId": "",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 1
+                },
+                "menuItem3": {
+                  "label": "Reperti",
+                  "id": "menuItem3",
+                  "widgetId": "",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 2
+                }
+              },
+              "isVisible": true,
+              "label": "Menu",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 1,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 48,
+              "menuItemsSource": "STATIC",
+              "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+              "placement": "CENTER"
             }
           ]
         },

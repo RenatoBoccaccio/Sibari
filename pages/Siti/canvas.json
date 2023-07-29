@@ -216,6 +216,7 @@
                           "key": "primaryColumns.customColumn1.borderRadius"
                         }
                       ],
+                      "compactMode": "SHORT",
                       "displayName": "Table",
                       "bottomRow": 85,
                       "parentRowSpace": 10,

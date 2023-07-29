@@ -98,7 +98,6 @@
                       "groupButtons": {
                         "groupButton3": {
                           "label": "Siti",
-                          "iconName": "more",
                           "id": "groupButton3",
                           "buttonType": "SIMPLE",
                           "placement": "CENTER",
@@ -143,11 +142,11 @@
                             }
                           },
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                          "onClick": "{{navigateTo('Siti', {}, 'SAME_WINDOW');}}"
+                          "onClick": "{{navigateTo('Siti', {}, 'SAME_WINDOW');}}",
+                          "iconAlign": "left"
                         },
                         "groupButton1": {
                           "label": "Cassette",
-                          "iconName": "heart",
                           "id": "groupButton1",
                           "widgetId": "",
                           "buttonType": "SIMPLE",
