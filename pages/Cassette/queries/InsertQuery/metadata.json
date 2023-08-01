@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO archeo.\"cassette\" (\n\t\"idcassetta\",\n\t\"comune\",\n\t\"localita\",\n\t\"sito\",\n\t\"sigla\",\n\t\"anno\",\n\t\"data\",\n\t\"frontalino_cassetta\",\n\t\"field_9\")\nVALUES (\n\t'{{insert_form.formData.idcassetta}}',\n\t'{{insert_form.formData.comune}}',\n\t'{{insert_form.formData.localita}}',\n\t'{{insert_form.formData.sito}}',\n\t'{{insert_form.formData.sigla}}',\n\t'{{insert_form.formData.anno}}',\n\t'{{insert_form.formData.data}}',\n\t'{{insert_form.formData.frontalino_cassetta}}',\n\t'{{insert_form.formData.field_9}}');",
+      "body": "INSERT INTO archeo.\"cassette\" (\n\t\"idcassetta\",\n\t\"Comune\",\n\t\"Localita\",\n\t\"Sito\",\n\t\"Sigla\",\n\t\"Anno\",\n\t\"Data\",\n\t\"Frontalino cassetta\",\n\t\"field_9\")\nVALUES (\n\t'{{insert_form.formData.idcassetta}}',\n\t'{{insert_form.formData.Comune}}',\n\t'{{insert_form.formData.Localita}}',\n\t'{{insert_form.formData.Sito}}',\n\t'{{insert_form.formData.Sigla}}',\n\t'{{insert_form.formData.Anno}}',\n\t'{{insert_form.formData.Data}}',\n\t'{{insert_form.formData.Frontalino cassetta}}',\n\t'{{insert_form.formData.field_9}}');",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,24 +27,19 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "insert_form.formData.anno",
-      "insert_form.formData.comune",
-      "insert_form.formData.data",
+      "insert_form.formData.Anno",
+      "insert_form.formData.Comune",
+      "insert_form.formData.Data",
+      "insert_form.formData.Frontalino cassetta",
+      "insert_form.formData.Localita",
+      "insert_form.formData.Sigla",
+      "insert_form.formData.Sito",
       "insert_form.formData.field_9",
-      "insert_form.formData.frontalino_cassetta",
-      "insert_form.formData.idcassetta",
-      "insert_form.formData.localita",
-      "insert_form.formData.sigla",
-      "insert_form.formData.sito"
+      "insert_form.formData.idcassetta"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
@@ -53,5 +48,5 @@
   },
   "id": "Cassette_InsertQuery",
   "deleted": false,
-  "gitSyncId": "64b7ec81e310d573901af7c1_64b945553e2ac96b6d4872f0"
+  "gitSyncId": "64b7ec81e310d573901af7c1_64c8bc4034855a570130d4b9"
 }

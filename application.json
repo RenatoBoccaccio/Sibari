@@ -1,7 +1,7 @@
 {
   "pages": [
     {
-      "id": "Cassette",
+      "id": "Cassette_old",
       "isDefault": false
     },
     {
@@ -18,6 +18,18 @@
     },
     {
       "id": "ReadPage",
+      "isDefault": false
+    },
+    {
+      "id": "Reperti",
+      "isDefault": false
+    },
+    {
+      "id": "Cantieri",
+      "isDefault": false
+    },
+    {
+      "id": "Cassette",
       "isDefault": false
     }
   ],
@@ -39,12 +51,12 @@
   },
   "publishedApplicationDetail": {
     "navigationSetting": {
-      "showNavbar": true,
+      "showNavbar": false,
       "orientation": "top",
-      "navStyle": "stacked",
+      "navStyle": "inline",
       "position": "static",
       "itemStyle": "text",
-      "colorStyle": "theme",
+      "colorStyle": "light",
       "logoAssetId": "",
       "logoConfiguration": "applicationTitleOnly",
       "showSignIn": true

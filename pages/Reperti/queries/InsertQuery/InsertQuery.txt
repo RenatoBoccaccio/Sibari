@@ -1,0 +1,28 @@
+INSERT INTO archeo."reperti" (
+	"idreperto",
+	"denominazione",
+	"definizione",
+	"tipologia",
+	"posizione",
+	"categoria",
+	"identificazione",
+	"titolo",
+	"livello",
+	"codice_radice",
+	"codice_componente",
+	"row"
+)
+VALUES (
+	'{{insert_form.formData.idreperto}}',
+	'{{insert_form.formData.denominazione}}',
+	'{{insert_form.formData.definizione}}',
+	'{{insert_form.formData.tipologia}}',
+	'{{insert_form.formData.posizione}}',
+	'{{insert_form.formData.categoria}}',
+	'{{insert_form.formData.identificazione}}',
+	'{{insert_form.formData.titolo}}',
+	'{{insert_form.formData.livello}}',
+	'{{insert_form.formData.codice_radice}}',
+	'{{insert_form.formData.codice_componente}}',
+	'{{insert_form.formData.row}}'
+);

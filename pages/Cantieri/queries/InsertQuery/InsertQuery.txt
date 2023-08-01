@@ -1,0 +1,20 @@
+INSERT INTO archeo."cantieri" (
+	"idcantiere",
+	"descrizione",
+	"codice_autorizzazione",
+	"data_inizio",
+	"data_fine_programmata",
+	"data_fine_effettiva",
+	"geom",
+	"url_documenti",
+	"idsito")
+VALUES (
+	'{{insert_form.formData.idcantiere}}',
+	'{{insert_form.formData.descrizione}}',
+	'{{insert_form.formData.codice_autorizzazione}}',
+	'{{insert_form.formData.data_inizio}}',
+	'{{insert_form.formData.data_fine_programmata}}',
+	'{{insert_form.formData.data_fine_effettiva}}',
+	'{{insert_form.formData.geom}}',
+	'{{insert_form.formData.url_documenti}}',
+	'{{insert_form.formData.idsito}}');

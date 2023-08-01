@@ -1,0 +1,2 @@
+DELETE FROM archeo."cantieri"
+  WHERE "idcantiere" = {{data_table.triggeredRow.idcantiere}};

@@ -1,0 +1,2 @@
+DELETE FROM archeo."reperti"
+  WHERE "idreperto" = {{data_table.triggeredRow.idreperto}};

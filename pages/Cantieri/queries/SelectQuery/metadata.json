@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Cassette",
+    "pageId": "Cantieri",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM archeo.\"cassette\"\nWHERE \"idcassetta\" ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY \"{{data_table.sortOrder.column || 'id'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT * FROM archeo.\"cantieri\"\nWHERE \"descrizione\" ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY \"{{data_table.sortOrder.column || 'idcantiere'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -34,7 +34,7 @@
       "(data_table.pageNo - 1) * data_table.pageSize",
       "data_table.pageSize",
       "data_table.searchText || \"\"",
-      "data_table.sortOrder.column || 'id'",
+      "data_table.sortOrder.column || 'idcantiere'",
       "data_table.sortOrder.order || 'ASC'"
     ],
     "userSetOnLoad": true,
@@ -42,7 +42,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Cassette_SelectQuery",
+  "id": "Cantieri_SelectQuery",
   "deleted": false,
-  "gitSyncId": "64b7ec81e310d573901af7c1_64c8bc4034855a570130d4bd"
+  "gitSyncId": "64b7ec81e310d573901af7c1_64c8b82c34855a570130d4b0"
 }

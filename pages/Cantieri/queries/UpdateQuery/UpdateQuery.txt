@@ -1,0 +1,10 @@
+UPDATE archeo."cantieri" SET
+		"descrizione" = '{{update_form.fieldState.descrizione.isVisible ? update_form.formData.descrizione : update_form.sourceData.descrizione}}',
+		"codice_autorizzazione" = '{{update_form.fieldState.codice_autorizzazione.isVisible ? update_form.formData.codice_autorizzazione : update_form.sourceData.codice_autorizzazione}}',
+    "data_inizio" = '{{update_form.fieldState.data_inizio.isVisible ? update_form.formData.data_inizio : update_form.sourceData.data_inizio}}',
+		"data_fine_programmata" = '{{update_form.fieldState.data_fine_programmata.isVisible ? update_form.formData.data_fine_programmata : update_form.sourceData.data_fine_programmata}}',
+		"data_fine_effettiva" = '{{update_form.fieldState.data_fine_effettiva.isVisible ? update_form.formData.data_fine_effettiva : update_form.sourceData.data_fine_effettiva}}',
+		"geom" = '{{update_form.fieldState.geom.isVisible ? update_form.formData.geom : update_form.sourceData.geom}}',
+		"url_documenti" = '{{update_form.fieldState.url_documenti.isVisible ? update_form.formData.url_documenti : update_form.sourceData.url_documenti}}',
+		"idsito" = '{{update_form.fieldState.idsito.isVisible ? update_form.formData.idsito : update_form.sourceData.idsito}}'
+WHERE "idcantiere" = {{data_table.selectedRow.idcantiere}};

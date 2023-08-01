@@ -1,0 +1,2 @@
+DELETE FROM archeo."cassette"
+  WHERE "idcassetta" = {{data_table.triggeredRow.idcassetta}};

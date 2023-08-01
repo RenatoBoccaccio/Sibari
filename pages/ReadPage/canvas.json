@@ -97,7 +97,7 @@
                       "parentRowSpace": 10,
                       "groupButtons": {
                         "groupButton3": {
-                          "label": "Siti",
+                          "label": " Siti ",
                           "id": "groupButton3",
                           "buttonType": "SIMPLE",
                           "placement": "CENTER",
@@ -157,6 +157,32 @@
                           "menuItems": {},
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                           "onClick": "{{navigateTo('Cassette', {}, 'SAME_WINDOW');}}"
+                        },
+                        "groupButton804uwdp9zo": {
+                          "id": "groupButton804uwdp9zo",
+                          "index": 2,
+                          "label": "Reperti",
+                          "menuItems": {},
+                          "buttonType": "SIMPLE",
+                          "placement": "CENTER",
+                          "widgetId": "1kgj0822y3",
+                          "isDisabled": false,
+                          "isVisible": true,
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "onClick": "{{navigateTo('Reperti', {}, 'SAME_WINDOW');}}"
+                        },
+                        "groupButton7vbka3y266": {
+                          "id": "groupButton7vbka3y266",
+                          "index": 3,
+                          "label": "Cantieri",
+                          "menuItems": {},
+                          "buttonType": "SIMPLE",
+                          "placement": "CENTER",
+                          "widgetId": "92dqmx98py",
+                          "isDisabled": false,
+                          "isVisible": true,
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "onClick": "{{navigateTo('Cantieri', {}, 'SAME_WINDOW');}}"
                         }
                       },
                       "type": "BUTTON_GROUP_WIDGET",
@@ -170,6 +196,12 @@
                         },
                         {
                           "key": "groupButtons.groupButton3.onClick"
+                        },
+                        {
+                          "key": "groupButtons.groupButton804uwdp9zo.onClick"
+                        },
+                        {
+                          "key": "groupButtons.groupButton7vbka3y266.onClick"
                         }
                       ],
                       "leftColumn": 0,
@@ -179,6 +211,12 @@
                         },
                         {
                           "key": "groupButtons.groupButton3.buttonColor"
+                        },
+                        {
+                          "key": "groupButtons.groupButton804uwdp9zo.buttonColor"
+                        },
+                        {
+                          "key": "groupButtons.groupButton7vbka3y266.buttonColor"
                         }
                       ],
                       "key": "07c0ej1z7u",

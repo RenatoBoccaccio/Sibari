@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Cassette",
+    "pageId": "Cassette_old",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM archeo.\"cassette\"\nWHERE \"idcassetta\" ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY \"{{data_table.sortOrder.column || 'id'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT * FROM archeo.cassette\nORDER BY \"{{data_table.sortOrder.column || 'idcassetta'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,14 +27,18 @@
       ]
     },
     "executeOnLoad": true,
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
       "(data_table.pageNo - 1) * data_table.pageSize",
       "data_table.pageSize",
-      "data_table.searchText || \"\"",
-      "data_table.sortOrder.column || 'id'",
+      "data_table.sortOrder.column || 'idcassetta'",
       "data_table.sortOrder.order || 'ASC'"
     ],
     "userSetOnLoad": true,
@@ -42,7 +46,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Cassette_SelectQuery",
+  "id": "Cassette_old_SelectQuery",
   "deleted": false,
-  "gitSyncId": "64b7ec81e310d573901af7c1_64c8bc4034855a570130d4bd"
+  "gitSyncId": "64b7ec81e310d573901af7c1_64b945553e2ac96b6d4872f1"
 }

@@ -1,10 +1,11 @@
 UPDATE archeo."cassette" SET
-		"comune" = '{{update_form.fieldState.comune.isVisible ? update_form.formData.comune : update_form.sourceData.comune}}',
-		"localita" = '{{update_form.fieldState.localita.isVisible ? update_form.formData.localita : update_form.sourceData.localita}}',
-    "sito" = '{{update_form.fieldState.sito.isVisible ? update_form.formData.sito : update_form.sourceData.sito}}',
-		"sigla" = '{{update_form.fieldState.sigla.isVisible ? update_form.formData.sigla : update_form.sourceData.sigla}}',
-		"anno" = '{{update_form.fieldState.anno.isVisible ? update_form.formData.anno : update_form.sourceData.anno}}',
-		"data" = '{{update_form.fieldState.data.isVisible ? update_form.formData.data : update_form.sourceData.data}}',
-		"frontalino_cassetta" = '{{update_form.fieldState.frontalino_cassetta.isVisible ? update_form.formData.frontalino_cassetta : update_form.sourceData.frontalino_cassetta}}',
+		"idcassetta" = '{{update_form.fieldState.idcassetta.isVisible ? update_form.formData.idcassetta : update_form.sourceData.idcassetta}}',
+		"Comune" = '{{update_form.fieldState.Comune.isVisible ? update_form.formData.Comune : update_form.sourceData.Comune}}',
+    "Localita" = '{{update_form.fieldState.Localita.isVisible ? update_form.formData.Localita : update_form.sourceData.Localita}}',
+		"Sito" = '{{update_form.fieldState.Sito.isVisible ? update_form.formData.Sito : update_form.sourceData.Sito}}',
+		"Sigla" = '{{update_form.fieldState.Sigla.isVisible ? update_form.formData.Sigla : update_form.sourceData.Sigla}}',
+		"Anno" = '{{update_form.fieldState.Anno.isVisible ? update_form.formData.Anno : update_form.sourceData.Anno}}',
+		"Data" = '{{update_form.fieldState.Data.isVisible ? update_form.formData.Data : update_form.sourceData.Data}}',
+		"Frontalino cassetta" = '{{update_form.fieldState.Frontalino cassetta.isVisible ? update_form.formData.Frontalino cassetta : update_form.sourceData.Frontalino cassetta}}',
 		"field_9" = '{{update_form.fieldState.field_9.isVisible ? update_form.formData.field_9 : update_form.sourceData.field_9}}'
-WHERE "idcassetta" = {{data_table.selectedRow.idcassetta}};
+WHERE "id" = {{data_table.selectedRow.id}};

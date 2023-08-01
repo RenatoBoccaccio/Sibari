@@ -1,0 +1,13 @@
+UPDATE archeo."reperti" SET
+		"denominazione" = '{{update_form.fieldState.denominazione.isVisible ? update_form.formData.denominazione : update_form.sourceData.denominazione}}',
+		"definizione" = '{{update_form.fieldState.definizione.isVisible ? update_form.formData.definizione : update_form.sourceData.definizione}}',
+    "tipologia" = '{{update_form.fieldState.tipologia.isVisible ? update_form.formData.tipologia : update_form.sourceData.tipologia}}',
+		"posizione" = '{{update_form.fieldState.posizione.isVisible ? update_form.formData.posizione : update_form.sourceData.posizione}}',
+		"categoria" = '{{update_form.fieldState.categoria.isVisible ? update_form.formData.categoria : update_form.sourceData.categoria}}',
+		"identificazione" = '{{update_form.fieldState.identificazione.isVisible ? update_form.formData.identificazione : update_form.sourceData.identificazione}}',
+		"titolo" = '{{update_form.fieldState.titolo.isVisible ? update_form.formData.titolo : update_form.sourceData.titolo}}',
+		"livello" = '{{update_form.fieldState.livello.isVisible ? update_form.formData.livello : update_form.sourceData.livello}}',
+		"codice_radice" = '{{update_form.fieldState.codice_radice.isVisible ? update_form.formData.codice_radice : update_form.sourceData.codice_radice}}',
+		"codice_componente" = '{{update_form.fieldState.codice_componente.isVisible ? update_form.formData.codice_componente : update_form.sourceData.codice_componente}}',
+		"row" = '{{update_form.fieldState.row.isVisible ? update_form.formData.row : update_form.sourceData.row}}'
+	WHERE "idreperto" = {{data_table.selectedRow.idreperto}};

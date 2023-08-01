@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "DELETE FROM archeo.\"cassette\"\n  WHERE \"idcassetta\" = {{data_table.triggeredRow.idcassetta}};",
+      "body": "DELETE FROM archeo.\"cassette\"\n  WHERE \"id\" = {{data_table.triggeredRow.id}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,16 +27,11 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "data_table.triggeredRow.idcassetta"
+      "data_table.triggeredRow.id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
@@ -45,5 +40,5 @@
   },
   "id": "Cassette_DeleteQuery",
   "deleted": false,
-  "gitSyncId": "64b7ec81e310d573901af7c1_64b945553e2ac96b6d4872f6"
+  "gitSyncId": "64b7ec81e310d573901af7c1_64c8bc4034855a570130d4ba"
 }
